@@ -1,0 +1,10 @@
+#Elementos a ignorar según la rúbrica de correcciones.
+#---------------------------------------------------------------------
+#El estudiante utilizará .gitignore para evitar 
+#enviar archivos irrelevantes para la presentación como node_modules.
+# Ignora la carpeta node_modules
+node_modules/
+
+# Ignora archivos de configuración package
+package-lock.json
+package.json
