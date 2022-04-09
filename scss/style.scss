@@ -8,7 +8,7 @@ body {
     font-family: sans-serif;
 }
 
-/*Navigation*/
+/*------------ Navigation ------------*/
 
 #nav-bar {
     position: sticky;
@@ -17,10 +17,10 @@ body {
 }
 
 /* Navigation Style*/
-$bgDefault      : #59b660;
-$bgHighlight    : #22da5c;
-$colDefault     : #eff6f7;
-$colHighlight   : #edf7ee;
+$bgDefault      : #229c2c;
+$bgHighlight    : #10b948;
+$colDefault     : #3db0bf;
+$colHighlight   : #000e02;
 $dropDown       : false;
 .navbar {
   background-color: $bgDefault;
@@ -115,10 +115,9 @@ $dropDown       : false;
     color: $colHighlight;
     background-color: $bgHighlight; }}
 
-/* Logo Size */
+/* Logo Size good practice Ligthouse of Chrome */
     .navbar-brand img {
-        height: 100px;
-        padding-left: 20px;
+      aspect-ratio: attr(width) / attr(height);
 }
 
 .navbar-nav li {
@@ -132,16 +131,194 @@ $dropDown       : false;
     text-align: left;
 }
 
-/*A ver si sigue funcionando 3333...*/
+/*------------ INICIO Section ------------*/
 
+$bgBanner      : #18741f;
+$bgHLBanner    : #6dcf8c;
 
+#inicio {
+  background-image: linear-gradient(to right, $bgHLBanner,$bgBanner);
+  margin: 0;
+  padding: 6em 0 0 0;
+}
 
+#main-title {
+  font-size: 3em;
+  font-weight:700;
+  margin-top: 45px;
+  color: #fff;
+}
 
+.paragraph {
+  font-size: 0.91em;
+  font-weight: 600;
+  color: #fff;
+}
 
+.img-fluid{
+  margin-top:3.5em;
+  margin-bottom: 100px;
+}
 
+.img-wave{
+  margin:0;
+  width: 100%;
+}
 
+/*------------ PRODUCTOS Section ------------*/
 
+.bar-list {
+  font-size: 40px;
+  font-weight: 800;
+  margin: auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
 
+.bar-list::before{
+  content: " ";
+  background: $bgBanner;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+#productos{
+  padding: 80px 0;
+}
+
+.product-img {
+  width: 20em;
+  margin-top: 20px;
+}
+
+.product-img:hover {
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #3dec1e;
+}
+
+.bar-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 20px 0 0 0;
+}
+
+.bar-paragra1 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bar-paragra2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*------------ NOSOTROS Section ------------*/
+
+$bgAboutus: #38e00ade;
+
+#about-us{
+  background: $bgAboutus;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.paragraph-about {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/*------------ PROVEEDORES Section ------------*/
+
+/*------------ CONTACTO Section ------------*/
+$bgMedia:#afe812de;
+
+#contact-media{
+  background: $bgMedia;
+  padding:100px 0;
+}
+
+.paragraph-media{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social-icons img {
+  width: 60px;
+  transition: 0.5s;
+}
+
+.social-icons a:hover img{
+  transform: translateY(-10px);
+
+}
+
+/*------------ Footer ------------*/
+
+$bgFooter: #17241ade;
+$bgGFooter: #0f9a50de;
+
+#footer {
+  background-image: linear-gradient(to right, $bgFooter, $bgGFooter);
+  color: #fff;
+}
+
+.footer-box {
+  padding: 20px;
+}
+
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.tel-mail {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.footer-box .form-control{
+  box-shadow: none !important;
+  border: none;
+  border-radius:0;
+  margin-top: 25px;
+  max-width: 250px;;
+}
+
+.footer-box .btn-primary {
+  font-weight: 700;
+  box-shadow: none !important;
+  border: none;
+  border-radius:0;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, $bgGFooter, $bgFooter);
+}
+
+form .btn-primary {
+  font-weight: 700;
+  box-shadow: none !important;
+  border: none;
+  border-radius:0;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, $bgGFooter, $bgFooter);
+}
+
+hr {
+  background-color: #fff;  
+}
+
+.copyrigth {
+  margin-bottom: 0;
+  padding-bottom:30px;
+  text-align: center;
+}
 
 
 
