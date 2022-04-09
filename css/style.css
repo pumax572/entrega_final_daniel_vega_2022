@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Trabajo Final Desarrollo Web 2022*/
 * {
   margin: 0;
@@ -187,6 +188,7 @@ body {
   margin-top: 10px; }
 
 /*------------ PROVEEDORES Section ------------*/
+/*Ultima section tiene sólo un form*/
 /*------------ CONTACTO Section ------------*/
 #contact-media {
   background: #afe812de;
